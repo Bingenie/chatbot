@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
+    <!-- Career List Command -->
+    <category>
+        <pattern>*LIST JOBS*</pattern>
+        <pattern>*SHOW JOBS*</pattern>
+        <template>
+            Here are five common computing careers:<br/>
+            1. **Software Developer** - <a href="https://www.coursera.org/specializations/software-development">Learn More</a><br/>
+            2. **Cybersecurity Analyst** - <a href="https://www.coursera.org/specializations/intro-cyber-security">Learn More</a><br/>
+            3. **Data Analyst** - <a href="https://www.coursera.org/professional-certificates/google-data-analytics">Learn More</a><br/>
+            4. **Machine Learning Engineer** - <a href="https://www.coursera.org/specializations/machine-learning-introduction">Learn More</a><br/>
+            5. **DevOps Engineer** - <a href="https://www.coursera.org/specializations/devops-on-aws">Learn More</a>
+        </template>
+    </category>
+
     <!-- First Question: Split into Two Paths -->
     <category>
         <pattern>*START QUIZ*</pattern>
