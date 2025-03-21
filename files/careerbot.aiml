@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!-- First Question: Split into Two Paths -->
+    <category>
+        <pattern>*START QUIZ*</pattern>
+        <pattern>*BEGIN QUIZ*</pattern>
+        <pattern>*TAKE QUIZ*</pattern>
+        <pattern>*QUIZ*</pattern>
+        <template>
+            Let's begin! Would you rather focus on **security and infrastructure**, or **development and AI**?<br/>
+            Type 'Security Path' for security-related careers.<br/>
+            Type 'Development Path' for development-related careers.
+        </template>
+    </category>
+
+    <!-- Path 1: Security and Infrastructure -->
+    <category>
+        <pattern>*SECURITY PATH*</pattern>
+        <template>
+            Do you prefer **protecting systems** or **optimizing operations**?<br/>
+            Type 'Protecting Systems' for Cybersecurity.<br/>
+            Type 'Optimizing Operations' for DevOps.
+        </template>
+    </category>
+
+    <category>
+        <pattern>*PROTECTING SYSTEMS*</pattern>
+        <template>
+            You might enjoy a career as a **Cybersecurity Analyst**!<br/>
+            <a href="https://www.coursera.org/specializations/intro-cyber-security">Learn more about Cybersecurity</a>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*OPTIMIZING OPERATIONS*</pattern>
+        <template>
+            A **DevOps Engineer** role may be a great fit for you!<br/>
+            <a href="https://www.coursera.org/specializations/devops-on-aws">Explore DevOps Engineering</a>
+        </template>
+    </category>
+
+    <!-- Path 2: Development and AI -->
+    <category>
+        <pattern>*DEVELOPMENT PATH*</pattern>
+        <template>
+            Do you enjoy **creating applications** or **working with data**?<br/>
+            Type 'Creating Apps' for Software Development.<br/>
+            Type 'Working with Data' to continue narrowing your choice.
+        </template>
+    </category>
+
+    <category>
+        <pattern>*CREATING APPS*</pattern>
+        <template>
+            You might thrive as a **Software Developer**!<br/>
+            <a href="https://www.coursera.org/specializations/software-development">Explore Software Development</a>
+        </template>
+    </category>
+
+    <!-- Second Question for Data Track -->
+    <category>
+        <pattern>*WORKING WITH DATA*</pattern>
+        <template>
+            Would you rather **analyze trends** or **build AI models**?<br/>
+            Type 'Analyze Trends' for Data Analyst.<br/>
+            Type 'Build AI Models' for Machine Learning Engineer.
+        </template>
+    </category>
+
+    <category>
+        <pattern>*ANALYZE TRENDS*</pattern>
+        <template>
+            A **Data Analyst** role may be a great fit for you!<br/>
+            <a href="https://www.coursera.org/professional-certificates/google-data-analytics">Learn more about Data Analytics</a>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*BUILD AI MODELS*</pattern>
+        <template>
+            You might be a great **Machine Learning Engineer**!<br/>
+            <a href="https://www.coursera.org/specializations/machine-learning-introduction">Learn about Machine Learning</a>
+        </template>
+    </category>
+
+    <!-- Catch-All Response for Unrecognized Inputs -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I'm here to help! You can type 'list jobs' to see career options or 'I want to start quiz' to get a career match.
+        </template>
+    </category>
+
+</aiml>
