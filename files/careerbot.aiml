@@ -3,6 +3,8 @@
 
     <!-- Career List Command -->
     <category>
+        <pattern>LIST JOBS</pattern>
+        <pattern>SHOW JOBS</pattern>
         <pattern>*LIST JOBS*</pattern>
         <pattern>*SHOW JOBS*</pattern>
         <template>
@@ -17,10 +19,14 @@
 
     <!-- First Question: Split into Two Paths -->
     <category>
+        <pattern>START QUIZ</pattern>
+        <pattern>BEGIN QUIZ</pattern>
+        <pattern>TAKE QUIZ</pattern>
+        <pattern>I WANT TO START QUIZ</pattern>
         <pattern>*START QUIZ*</pattern>
         <pattern>*BEGIN QUIZ*</pattern>
         <pattern>*TAKE QUIZ*</pattern>
-        <pattern>*QUIZ*</pattern>
+        <pattern>*I WANT TO START QUIZ*</pattern>
         <template>
             Let's begin! Would you rather focus on **security and infrastructure**, or **development and AI**?<br/>
             Type 'Security Path' for security-related careers.<br/>
@@ -30,6 +36,7 @@
 
     <!-- Path 1: Security and Infrastructure -->
     <category>
+        <pattern>SECURITY PATH</pattern>
         <pattern>*SECURITY PATH*</pattern>
         <template>
             Do you prefer **protecting systems** or **optimizing operations**?<br/>
@@ -39,6 +46,7 @@
     </category>
 
     <category>
+        <pattern>PROTECTING SYSTEMS</pattern>
         <pattern>*PROTECTING SYSTEMS*</pattern>
         <template>
             You might enjoy a career as a **Cybersecurity Analyst**!<br/>
@@ -47,6 +55,7 @@
     </category>
 
     <category>
+        <pattern>OPTIMIZING OPERATIONS</pattern>
         <pattern>*OPTIMIZING OPERATIONS*</pattern>
         <template>
             A **DevOps Engineer** role may be a great fit for you!<br/>
@@ -56,6 +65,7 @@
 
     <!-- Path 2: Development and AI -->
     <category>
+        <pattern>DEVELOPMENT PATH</pattern>
         <pattern>*DEVELOPMENT PATH*</pattern>
         <template>
             Do you enjoy **creating applications** or **working with data**?<br/>
@@ -65,6 +75,7 @@
     </category>
 
     <category>
+        <pattern>CREATING APPS</pattern>
         <pattern>*CREATING APPS*</pattern>
         <template>
             You might thrive as a **Software Developer**!<br/>
@@ -74,6 +85,7 @@
 
     <!-- Second Question for Data Track -->
     <category>
+        <pattern>WORKING WITH DATA</pattern>
         <pattern>*WORKING WITH DATA*</pattern>
         <template>
             Would you rather **analyze trends** or **build AI models**?<br/>
@@ -83,6 +95,7 @@
     </category>
 
     <category>
+        <pattern>ANALYZE TRENDS</pattern>
         <pattern>*ANALYZE TRENDS*</pattern>
         <template>
             A **Data Analyst** role may be a great fit for you!<br/>
@@ -91,6 +104,7 @@
     </category>
 
     <category>
+        <pattern>BUILD AI MODELS</pattern>
         <pattern>*BUILD AI MODELS*</pattern>
         <template>
             You might be a great **Machine Learning Engineer**!<br/>
