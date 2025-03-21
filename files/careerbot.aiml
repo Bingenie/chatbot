@@ -1,10 +1,11 @@
+ <!-- Bryan Ingeniero 011896491 -->
+ 
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
 
     <!-- Career List Command -->
     <category>
-        <pattern>LIST JOBS</pattern>
-        <pattern>SHOW JOBS</pattern>
+        <pattern>list jobs</pattern>
         <template>
             Here are five common computing careers:<br/>
             1. **Software Developer** - <a href="https://www.coursera.org/specializations/software-development">Learn More</a><br/>
@@ -14,13 +15,14 @@
             5. **DevOps Engineer** - <a href="https://www.coursera.org/specializations/devops-on-aws">Learn More</a>
         </template>
     </category>
+    
 
     <!-- First Question: Split into Two Paths -->
     <category>
         <pattern>START QUIZ</pattern>
         <pattern>BEGIN QUIZ</pattern>
         <pattern>TAKE QUIZ</pattern>
-        <pattern>I WANT TO START QUIZ</pattern>
+        <pattern>I want to start a quiz</pattern>
         <template>
             Let's begin! Would you rather focus on **security and infrastructure**, or **development and AI**?<br/>
             Type 'Security Path' for security-related careers.<br/>
@@ -100,10 +102,24 @@
 
     <!-- Catch-All Response for Unrecognized Inputs -->
     <category>
-        <pattern>HELP</pattern>
+        <pattern>yes</pattern>
         <template>
             I'm here to help! You can type 'list jobs' to see career options or 'I want to start quiz' to get a career match.
         </template>
     </category>
-
+    
+    <category>
+        <pattern>no</pattern>
+        <template>
+            Alrighty! I'll be here when you need me and we will get you to the future you'll excel in :)
+        </template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Aloha! I'm here to help! Do you need assistance about your amazing future? type 'yes' or 'no'
+        </template>
+    </category>
+    
 </aiml>
